@@ -5,22 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>kokoa clone</title>
+    <!-- <link rel="stylesheet" href="styles.css" /> -->
+    <style>
+      /* margin :  box border(경계)의 바깥에 있는 공간 */
+      /* padding : box border(경계)의 안쪽에 있는 공간 */
+      html {
+        background-color: lightskyblue;
+      }
+
+      body {
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+        flex-direction: column;
+        height: 100vh;
+      }
+
+      div {
+        width: 100px;
+        background-color: lavender;
+      }
+    </style>
   </head>
   <body>
-    <form>
-      <!-- id는 body안에 어떤 태그에든 넣을 수 있는 attribute-->
-      <!-- label for와 input id가 같으면 서로 연결. -->
-      <!-- profile 텍스트 클릭하면 profile file을 직접 클릭하지 않아도 창이 뜬다. -->
-      <label for="profile">Profile File</label>
-      <input id="profile" type="file" accept="image/*" />
-      <!-- first-name을 클릭하면 First Name을 입력할 수 있는 칸 안으로 마우스 커서 이동  -->
-      <label for="first-name">First Name</label>
+    <div></div>
+    <div></div>
+    <div></div>
+    <!-- <form> -->
+    <!-- id는 body안에 어떤 태그에든 넣을 수 있는 attribute-->
+    <!-- label for와 input id가 같으면 서로 연결. -->
+    <!-- profile 텍스트 클릭하면 profile file을 직접 클릭하지 않아도 창이 뜬다. -->
+    <!-- <label for="profile">Profile File</label>
+      <input id="profile" type="file" accept="image/*" /> -->
+    <!-- first-name을 클릭하면 First Name을 입력할 수 있는 칸 안으로 마우스 커서 이동  -->
+    <!-- <label for="first-name">First Name</label>
       <input id="first-name" required placeholder="First Name" type="text" />
       <input required placeholder="Last Name" type="text" />
       <input required placeholder="User Name" type="text" />
       <input required minlength="10" placeholder="Password" type="date" />
       <input type="submit" value="Create Account" />
-      <input type="color" />
-    </form>
+      <input type="color" /> -->
+    <!-- </form> -->
   </body>
 </html>
