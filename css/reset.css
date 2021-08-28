@@ -129,3 +129,7 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+/* kokoa talk의 모든 input의 outline 색상을 없애기 위해서 reset.css파일에 작성해줬다 */
+input:focus {
+  outline: none;
+}
