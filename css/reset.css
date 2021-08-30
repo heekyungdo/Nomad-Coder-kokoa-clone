@@ -133,3 +133,11 @@ table {
 input:focus {
   outline: none;
 }
+
+/* 모든 링크 컬러는 블루도 default 되어있다. */
+/* kokoa talk의 모든 링크 컬러 부모로부터 상속받기*/
+a {
+  color: inherit;
+  /* 링크 밑의 파란 줄 없애고 싶다. */
+  text-decoration: none;
+}

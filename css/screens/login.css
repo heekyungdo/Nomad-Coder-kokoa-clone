@@ -60,7 +60,7 @@
 #login-form a {
   text-decoration-line: none;
   text-align: center;
-  /* 부모로 부터 색상 상속받는 것 */
+  /* inherit는 부모로 부터 색상 상속받는 것 */
   color: inherit;
   font-size: 13px;
 }
