@@ -1,0 +1,66 @@
+.welcome-header {
+  margin: 90px 0px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 600;
+}
+
+.welcome-header__title {
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+
+.welcome-header__text {
+  width: 60%;
+  opacity: 0.7;
+}
+/* login-form을 가로로 쓰기 위함. */
+#login-form {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 30px;
+}
+
+#login-form input {
+  padding: 10px 0px;
+  border: none;
+  font-size: 18px;
+  /* border-bottom: 1px solid rgba(0, 0, 0, 0.2); */
+  margin-bottom: 25px;
+  /* border color를 0.3초동안 애니메이션으로 바꾸고 싶어.  */
+  /* transition: border-color 0.3s ease-in-out; */
+}
+/* css를 적용해주지 않을 때 사용한다. :not() */
+/* not은 input이 type submit을 제외한 나머지에 적용, []사이에 쓰인 것들은 attribute selector이다. */
+#login-form input:not([type="submit"]) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  transition: border-color 0.3s ease-in-out;
+}
+
+#login-form input ::placeholder {
+  color: rgba(0, 0, 0, 0.4);
+}
+/* input창에 마우스 올리면 bottom line 색상 변경 */
+/* 선택자의 스타일은 var로 변수 선언하고, 소괄호를 넣어주고,*/
+/* 해당 소괄호 안쪽에 root 부분과 마찬가지로 --를 먼저 넣고 뒤에 동일한 변수명 입력하면 된다. */
+#login-form input:focus {
+  border-color: var(--yellow);
+}
+
+#login-form input[type="submit"] {
+  background-color: var(--yellow);
+  /* 커서 모양 바꿔주는거 */
+  cursor: pointer;
+  padding: 20px 0px;
+  border-radius: 5px;
+}
+
+#login-form a {
+  text-decoration-line: none;
+  text-align: center;
+  /* 부모로 부터 색상 상속받는 것 */
+  color: inherit;
+  font-size: 13px;
+}
