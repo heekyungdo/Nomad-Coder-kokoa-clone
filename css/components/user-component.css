@@ -1,0 +1,35 @@
+/* friends 창에서 프로필 부분 */
+.user-component {
+  /* 두개의 column이 ?? */
+  /* display: flex; */
+}
+
+/* user-component__column에서 첫번째 자식 */
+.user-component__column:first-child {
+  /* 사진과 텍스트가 가로로 정렬되게 */
+  /* img와 텍스트가 가로로 정렬되게 하기 위해선 부모요소인
+  user-component__column에 display:flex를 줘야한다. */
+  display: flex;
+  /* 텍스트가 이미지 가운데 오게 */
+  /* align-items도 부모속성에 작성해야돼 */
+  align-items: center;
+}
+
+.user-component__photo {
+  /* 프로필 사진 중간 사이즈 */
+  width: 70px;
+  height: 70px;
+  border-radius: 30px;
+  margin-right: 20px;
+}
+
+.user-component__nickname {
+  font-weight: 600;
+  font-size: 22px;
+}
+
+.user-component__subtitle {
+  margin-top: 8px;
+  font-size: 17px;
+  color: rgba(0, 0, 0, 0.5);
+}

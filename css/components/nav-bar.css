@@ -26,9 +26,10 @@
 /* 아이콘 컬러 */
 .nav__link {
   color: #2d2e38;
-  display: relative;
+  position: relative;
 }
 
+/* unread 아이콘 */
 .nav__notification {
   background-color: tomato;
   width: 30px;
@@ -55,5 +56,18 @@
   /* position:absolute만 사용하면 body를 기준 삼기 때문에 unread는 화면 맨 오른쪽에서 5px만큼 떨어진다. */
   /* 그래서 nav__nofitication을 감싸고 있는 nav__link에 display:relative를 작성해준다. */
   /* position:absolute는 가장 가까운 relative를 가진 부모 기준으로 움직인다. */
-  right: 5px;
+  left: 20px;
+  bottom: 15px;
+}
+
+.nav__notification--dot {
+  width: 5px;
+  height: 5px;
+  background-color: tomato;
+  border-radius: 2.5px;
+  /* <span>이기 때문에 flex지정 */
+  display: flex;
+  position: absolute;
+  bottom: 26px;
+  left: 31px;
 }

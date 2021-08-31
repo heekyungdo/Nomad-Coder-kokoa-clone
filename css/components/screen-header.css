@@ -1,0 +1,17 @@
+.screen-header {
+  /* 모든 것들이 나란히 정렬되야하니, display:flex 사용 */
+  display: flex;
+  justify-content: space-between;
+  /* 아이콘들이 friends 텍스트와 중앙정렬 되어 있지 않아. 아이콘들의 교차축을 옮기기 위해서 사용*/
+  align-items: center;
+  padding: 55px 25px 20px 25px;
+}
+
+.screen-header__title {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.screen-header__icons span {
+  margin-left: 25px;
+}
