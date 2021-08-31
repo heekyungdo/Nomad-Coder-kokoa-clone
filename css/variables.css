@@ -2,5 +2,8 @@
 뒤에는 변수명을 입력하고, 변수명의 규칙은 CSS에서 클래스명이나 아이디명을 짓는 것과 같다. */
 /* 변경 가능한 모든 css 스타일에 변수를 지정하면, 나중에 손쉽게 변경 가능하다 */
 :root {
+  /* login page의 버튼 컬러 */
   --yellow: #fae100;
+  /* screen-header padding 값 */
+  --horizontal-space: 50px 25px 25px;
 }

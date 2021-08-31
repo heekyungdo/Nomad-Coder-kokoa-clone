@@ -1,10 +1,14 @@
 /* friends 창에서 프로필 부분 */
 .user-component {
-  /* 두개의 column이 ?? */
-  /* display: flex; */
+  /* 두개의 user-component 분리 시키기 */
+  justify-content: space-between;
+  margin-right: 25px;
 }
-
+/* user-component와 user-component__column에 적용시켜야 하는게 같으니 콤마를 이용해 코드 중복 방지 */
+/* 모든 component가 가로로 배치될 수 있도록 display:flex 사용 */
 /* user-component__column에서 첫번째 자식 */
+/* img와 text(username) */
+.user-component,
 .user-component__column:first-child {
   /* 사진과 텍스트가 가로로 정렬되게 */
   /* img와 텍스트가 가로로 정렬되게 하기 위해선 부모요소인
@@ -15,12 +19,17 @@
   align-items: center;
 }
 
+/* .user-component__column:last-child {
+  display: flex;
+  align-items: center.;
+} */
+
 .user-component__photo {
   /* 프로필 사진 중간 사이즈 */
   width: 70px;
   height: 70px;
   border-radius: 30px;
-  margin-right: 20px;
+  margin: 13px 17px 13px 26px;
 }
 
 .user-component__nickname {
@@ -31,5 +40,27 @@
 .user-component__subtitle {
   margin-top: 8px;
   font-size: 17px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/* 프로필 사진 큰 사이즈 */
+.user-component__photo--xl {
+  width: 80px;
+  height: 80px;
+}
+
+/* 프로필 사진 작은 사이즈 */
+.user-component__photo--sm {
+  width: 60px;
+  height: 60px;
+  border-radius: 25px;
+}
+
+.user-component__nickname--not-bold {
+  font-weight: 400;
+}
+
+/* 2> 부분 텍스트 색상 바꾸기 */
+.user-component__column:last-child {
   color: rgba(0, 0, 0, 0.5);
 }

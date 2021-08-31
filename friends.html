@@ -44,21 +44,56 @@
       ></i
     ></a>
 
+    <!-- user와 channel을 하나의 박스에 넣어준다. -->
+    <main class="friends-screen">
+      <div class="user-component">
+        <!-- .user-component__column*2 -->
+        <!-- container -->
+        <div class="user-component__column">
+          <!-- 프로질 사진 중간 사이즈와 큰 사이즈. 각각 다른 페이지에 사용할 class name이다. -->
+          <img
+            src="img/profilePhoto.jpg"
+            class="user-component__photo user-component__photo--xl"
+          />
+          <div class="user-component__text">
+            <h4 class="user-component__nickname">Clara</h4>
+            <!-- <h6 class="user-component__subtitle">this text whatever</h6> -->
+          </div>
+        </div>
+        <div class="user-component__column"></div>
+      </div>
+      <!-- channel 위 border line -->
+      <div class="friends-screen__channel">
+        <!-- add text channel -->
+        <div class="friends-screen__channel-header">
+        <span>Channel</span>
+        <i class="fas fa-chevron-up fa-xs"></i>
+      </div>
+      </div>
+      <!-- channel 아래 user part 생성 -->
+      <div class="user-component">
+        <!-- .user-component__column*2 -->
+        <!-- container -->
+        <div class="user-component__column">
+          <!-- 프로질 사진 작은 사이즈 각각 다른 페이지에 사용할 class name이다. -->
+          <img
+            src="img/profilePhoto.jpg"
+            class="user-component__photo user-component__photo--sm"
+          />
+          <div class="user-component__text">
+            <h4 class="user-component__nickname user-component__nickname--not-bold">Channel</h4>
+            <!-- <h6 class="user-component__subtitle">this text whatever</h6> -->
+          </div>
+        </div>
+        <div class="user-component__column">
+          <span>2</span><i class="fas fa-chevron-right fa-xs"></i>
+        </div>
+      </div>
+    </main>
+
     <!-- 다른 페이지에도 동일하게 있어 -->
     <!-- text와 사진으로 이루어져있어 -->
     <!-- 두개의 column를 갖고 있어. 첫번째 column은 사진과 text 넣는다. -->
-    <div class="user-component">
-      <!-- .user-component__column*2 -->
-      <!-- container -->
-      <div class="user-component__column">
-        <img src="img/profilePhoto.jpg" class="user-component__photo" />
-        <div class="user-component__text">
-          <h4 class="user-component__nickname">Clara</h4>
-          <h6 class="user-component__subtitle">this text whatever</h6>
-        </div>
-      </div>
-      <div class="user-component__column"></div>
-    </div>
 
     <!-- VSC단축키: nav>ul>li*4>a -->
     <nav class="nav">
@@ -83,7 +118,7 @@
           <a class="nav__link" href="#">
             <span class="nav__notification--dot"></span>
             <i class="fas fa-ellipsis-h fa-2x"></i
-          ></a>
+          ></span></a>
         </li>
       </ul>
     </nav>
