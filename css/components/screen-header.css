@@ -1,3 +1,4 @@
+/* header 돋보기, 음악, 설정 아이콘 등 */
 .screen-header {
   /* 모든 것들이 나란히 정렬되야하니, display:flex 사용 */
   display: flex;

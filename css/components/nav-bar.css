@@ -1,3 +1,4 @@
+/* 아래 nev bar */
 .nav {
   /* 그 어떠한 걸해도 뭔가가 계속 그 자리에 있길 원할 때 */
   position: fixed;
@@ -30,27 +31,11 @@
 }
 
 /* unread 아이콘 */
+/* unread notification이 총 두개가 있는데,
+하나는 position:absolute가 필요없고,
+nav bar에 있는건 position:absolute가 필요하다.
+그래서 position:absolute를 제외한 같은 코드는 badge.css로 옮겨두었다 */
 .nav__notification {
-  background-color: tomato;
-  width: 30px;
-  height: 30px;
-  /* 원을 만들고 싶으면, 사각형 width의 반을 값으로 쓰면된다. */
-  border-radius: 15px;
-  /* text 1을 가운데 오게 한다. */
-  /* 하지만, 이렇게 사용하면 적용이 안돼.
-  왜?? 아래에 있는 display:block 때문이지. */
-  /* 그래서 아래 display:block을 지워버리자 */
-  /* display: flex라고 해줘도 span 태그는 block 요소로 바뀐다. */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* display:block을 사용한 이유는 nav__notification은 <span />태그이기 떄문에 
-  width와 height이 적용이 안돼. 그래서 적용되게 하려면 display:block사용해야해 */
-  /* <span>은 inline 요소 */
-  /* inline 요소는 콘텐츠의 흐름을 끊지 않고, 요소를 구성하는 태그에 할당된 공간만 차지 */
-  /* display: block; */
-  color: white;
-  font-weight: 600;
   /* unread 부분을 메세지 아이콘과 위로 겹치게 해야해 */
   position: absolute;
   /* position:absolute만 사용하면 body를 기준 삼기 때문에 unread는 화면 맨 오른쪽에서 5px만큼 떨어진다. */
