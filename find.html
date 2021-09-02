@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chats - Kokoa Clone</title>
+    <title>Find - Kokoa Clone</title>
   </head>
   <body>
     <div class="status-bar">
@@ -29,41 +29,31 @@
     </div>
     <!-- 다른페이지에도 header 동일 -->
     <header class="screen-header">
-      <h1 class="screen-header__title">Chats</h1>
+      <h1 class="screen-header__title">Find</h1>
       <div class="screen-header__icons">
         <span><i class="fas fa-search fa-2x"></i></span>
-        <span><i class="far fa-comment-dots fa-2x"></i></span>
-        <span><i class="fas fa-music fa-2x"></i></span>
+        <!-- 톱니바퀴를 기준으로 빨간 점이 들어가야하므로
+        톱니바퀴는 position:relative를 적용시켜야 하고,
+      빨간 점은 posigion:absolute를 적용시켜야한다. 
+    여기서 부모요소는 screen-header__icons이다.
+  돋보기가 부모요소가 아닌 이유? 빨간점은 돋보기가 아닌 screen-header__icons인
+div에 묶여있다.-->
+        <span class="nav__notification--dot"></span>
         <span><i class="fas fa-cog fa-2x"></i></span>
       </div>
     </header>
 
-    <!-- user와 channel을 하나의 박스에 넣어준다. -->
     <main class="main-screen">
-      <div class="user-component">
-        <!-- .user-component__column*2 -->
-        <!-- container -->
-        <div class="user-component__column">
-          <!-- 프로질 사진 중간 사이즈와 큰 사이즈. 각각 다른 페이지에 사용할 class name이다. -->
-          <img
-            src="img/profilePhoto.jpg"
-            class="user-component__photo user-component__photo--xl"
-          />
-          <div class="user-component__text">
-            <h4 class="user-component__nickname">KokoaTalk</h4>
-            <h6 class="user-component__subtitle">Please check My Kokoa Account Info</h6>
-        </div>  
-    </div>
-
-            <div class="user-component__column">
-                <span class="user-component__time">09:23</span>
-                <div class="badge">1</div>
+      <!-- icon 4개 -->
+      <div class="find-icons">
+        <div class="find-icons__icon">
+          <span>QR Code</span>
         </div>
-        </div>
-        
-        
-
-        </main>
+        <div class="find-icons__icon"><span>Add by Contacts</span></div>
+        <div class="find-icons__icon"><span>Add by ID</span></div>
+        <div class="find-icons__icon"><span>Invite</span></div>
+      </div>
+    </main>
 
     <!-- 다른 페이지에도 동일하게 있어 -->
     <!-- text와 사진으로 이루어져있어 -->
@@ -79,21 +69,22 @@
           ></a>
         </li>
         <li class="nav__li">
-            <!-- 해당 아이콘 클릭하면 chats.html 파일로 이동 -->
+          <!-- 해당 아이콘 클릭하면 chats.html 파일로 이동 -->
           <a class="nav__link" href="chats.html">
-            <!-- 메세지 아이콘 바로 위 unread 만들기 -->
-            <span class="nav__notification badge">1</span>
-            <i class="fas fa-comment fa-2x"></i
+            <i class="far fa-comment fa-2x"></i
           ></a>
         </li>
         <li class="nav__li">
-          <a class="nav__link" href="find.html"><i class="fas fa-search fa-2x"></i></a>
+          <a class="nav__link" href="find.html"
+            ><i class="fas fa-search fa-2x"></i
+          ></a>
         </li>
         <li class="nav__li">
           <a class="nav__link" href="more.html">
             <span class="nav__notification--dot"></span>
-            <i class="fas fa-ellipsis-h fa-2x"></i
-          ></span></a>
+            <span class="nav__more"
+              ><i class="fas fa-ellipsis-h fa-2x"></i></span
+          ></a>
         </li>
       </ul>
     </nav>

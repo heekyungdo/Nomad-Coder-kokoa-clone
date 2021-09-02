@@ -14,5 +14,16 @@
 }
 
 .screen-header__icons span {
+  /* 돋보기와 톱니바퀴 사이 간격 */
   margin-left: 25px;
+}
+
+.screen-header__icons {
+  /* 돋보기가 톱니바퀴가 가로로 정렬 배치되야함 */
+  position: relative;
+}
+
+/* main-screen 내에 들어갈 모든 요소에 padding 효과주기 */
+.main-screen {
+  padding: 25px;
 }

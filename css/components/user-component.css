@@ -29,9 +29,11 @@
   width: 70px;
   height: 70px;
   border-radius: 30px;
-  margin: 13px 17px 13px 26px;
 }
 
+.user-component__text {
+  margin-left: 15px;
+}
 .user-component__nickname {
   font-weight: 600;
   font-size: 22px;
@@ -70,6 +72,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  margin-right: -25px;
 }
 
 .user-component__time {
