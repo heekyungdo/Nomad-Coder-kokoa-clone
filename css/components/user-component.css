@@ -3,6 +3,7 @@
   /* 두개의 user-component 분리 시키기 */
   justify-content: space-between;
   margin-right: 25px;
+  /* margin: var(--horizontal-space); */
 }
 /* user-component와 user-component__column에 적용시켜야 하는게 같으니 콤마를 이용해 코드 중복 방지 */
 /* 모든 component가 가로로 배치될 수 있도록 display:flex 사용 */
