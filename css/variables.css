@@ -8,4 +8,5 @@
   --horizontal-space: 50px 25px 25px;
   /* page 내 중간 중간에 있는 border */
   --inside-border: 1px solid rgba(0, 0, 0, 0.2);
+  --grey: rgba(0, 0, 0, 0.5);
 }

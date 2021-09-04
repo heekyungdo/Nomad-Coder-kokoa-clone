@@ -3,9 +3,6 @@
   display: flex;
   /* 아이콘  같은 비율 간격으로 뛰우기 */
   justify-content: space-between;
-  /* page 내에 있는 선인데, 이 선은 아이콘 박스 쪽에 속하게 해도되고, 
-  아래 박스 쪽에 속하게 해도돼. 내 초이스. 나는 아이콘 박스 쪽에 속하게 한 것 */
-  border-bottom: var(--inside-border);
 }
 
 .find-icons__icon {
@@ -23,4 +20,140 @@
 /* 아이콘과 text 사이 간격 조절 */
 .find-icons__icon span {
   margin-top: 15px;
+}
+
+.recommended-friends {
+  /* page 내에 있는 선인데, 이 선은 아이콘 박스 쪽에 속하게 해도되고, 
+  아래 박스 쪽에 속하게 해도돼. 내 초이스. 나는 아이콘 박스 쪽에 속하게 한 것 */
+  /* border-top은 recommend friends 텍스트 위에 있는 border */
+  border-top: var(--inside-border);
+  /* border-bottom은 recommend friends 텍스트 아래에 있는 border */
+  border-bottom: var(--inside-border);
+  /* border-top은 recommend friends 텍스트 위에 있는 border */
+  /* 아이콘과 border line 사이 padding */
+  /* border-top은 recommend friends 텍스트 위에 있는 border */
+  /* border 라인 안 설정 */
+  padding: 25px 0px;
+  /* border 라인 밖 설정 */
+  margin: 25px 0px;
+}
+
+.recommended-friends__title {
+  font-size: 15px;
+  color: var(--grey);
+}
+
+.recommended-friends span {
+  /* span은 inline속성을 갖고 있어서 margin이 적용안돼. 그래서 block으로 변경해줘야해 */
+  display: block;
+  margin: 110px 0px;
+  text-align: center;
+  color: var(--grey);
+  font-size: 18px;
+}
+
+.open-chat__header {
+  /* 두 개의 텍스트 가로 정렬 */
+  display: flex;
+  justify-content: space-between;
+  color: var(--grey);
+  margin-bottom: 25px;
+}
+
+.open-chat__header i {
+  color: var(--grey);
+  margin-left: 5px;
+}
+
+.open-post {
+  display: flex;
+  /* 텍스트와 pahud 이미지 가로 정렬 */
+  justify-content: space-between;
+  /* across axis 중간 정렬 */
+  align-items: center;
+}
+
+.open-post__title {
+  /* #Emmanuel Pahud 텍스트 굵게 */
+  font-weight: 600;
+  /* open-post__title 아래 margin */
+  margin-bottom: 7px;
+}
+
+.open-post__hashtags {
+  /* 모든 텍스트 대문자로 변경 */
+  text-transform: uppercase;
+  opacity: 0.6;
+}
+
+.open-post__members {
+  /* 모든 요소(img, membersNumber, acitve)를 한 줄로 만들어야해.  */
+  display: flex;
+  /* cross axis(가로축)을 기준으로 중앙 정렬 */
+  align-items: center;
+  /* member 텍스트 위 margin */
+  margin-top: 7px;
+}
+
+/* 이미지 사이즈 조절 */
+.open-post__members img {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  /* 이미지 오른쪽 공간 margin */
+  margin-right: 5px;
+}
+
+.open-post__member-count {
+  /* 텍스트 색상 투명하게 */
+  opacity: 0.5;
+  font-size: 14px;
+}
+
+/* 그냥 .divider라고 쓰지 않은 이유는?
+코드 상에 또 다른 divider가 있을 수 있으니까 
+근데 이렇게 하면 open-post__members 안에 있는 divider에만 적용돼*/
+.open-post__members .divider {
+  /* | 라고 쓰지않고, CSS를 쓴 이유는? 그냥 CSS 연습하려고! */
+  width: 2px;
+  height: 15px;
+  margin: 0px 5px;
+  /* background-color를 줘야 화면상에 보임 */
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.open-post__member-status {
+  color: hotpink;
+}
+
+/* 하트를 이미지 위에 위치시켜주기 위함  */
+.open-post__photo {
+  position: relative;
+}
+
+.open-post__photo img {
+  width: 120px;
+  height: 120px;
+  border-radius: 10px;
+}
+
+.open-post__heart-count {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 5px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  /* heart 부분은 이미지 위에 있어야해. 즉, 가장 위에 있어야 한다는 뜻! */
+  /* absolute를 준 이유는?
+  absolute는 요소를 문서 흐름에서 제거하고, 페이지 레이아웃에 공간도 배정하지 않는다.
+  부모 요소를 기준으로 배치하는 요소. */
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 12px;
+}
+
+.open-post__heart-count span {
+  margin-left: 3px;
 }
