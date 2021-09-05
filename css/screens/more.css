@@ -1,0 +1,73 @@
+.user-component__subtitle {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.exclamation {
+  position: absolute;
+  border-radius: 100%;
+  border: 1px solid tomato;
+  color: tomato;
+  margin-left: 135px;
+  padding: 2px 5px;
+  font-size: 3px;
+}
+
+/* icon-row top marin 적용 */
+.more-screen .icon-row {
+  margin-top: 35px;
+}
+
+/* 아이콘 두번째 줄 margin 적용 */
+.more-screen .second-icon-row {
+  margin-top: 70px;
+}
+
+.more-suggestions {
+  /* 중간에 있는 border 위 margin 적용 */
+  margin-top: 50px;
+  border-top: var(--inside-border);
+  /* suggesionts 텍스트 위의 padding 적용 */
+  padding-top: 40px;
+}
+
+.more-suggestons__title {
+  margin-bottom: 30px;
+}
+
+/* suggestions 안에 아이콘 가로 정렬 */
+.more-suggestions__icons {
+  display: flex;
+}
+
+.more-suggestions__icon {
+  /* suggestions 안에 있는 아이콘 오른쪽 공간만들기*/
+  margin-right: 30px;
+  /* more-suggestions__icon 안에는 icon-image와 icon-text가 있다
+  이 둘을 위아래로 정렬해(flex-direction:column)주고, cross axis를 가운데로 맞춰주기 (align-items) */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 노란 배경 만들기 */
+.more-suggestions__icon-image {
+  width: 60px;
+  height: 60px;
+  background-color: var(--yellow);
+  border-radius: 10px;
+  /* 노란 배경 안에 icon 가운데로 오게 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* 아이콘과 텍스트 사이 공간 */
+  margin-bottom: 10px;
+}
+
+.more-suggestions__icon-image i {
+  font-size: 30px;
+  /* 아이콘 컬러 바꾸기. 아이콘은 text이기 때문에 color 코드로 적용가능 */
+  color: white;
+}

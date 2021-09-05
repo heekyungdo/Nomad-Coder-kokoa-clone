@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/styles.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>More - Kokoa Clone</title>
+  </head>
+  <body>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No Service</span>
+        <i class="fas fa-wifi"></i>
+      </div>
+      <!-- To Do: Wifi Icon -->
+      <div class="status-bar__column">
+        <span>18:43</span>
+        <!-- Battery Icon -->
+        <!-- Lightning Icon -->
+      </div>
+
+      <div class="status-bar__column">
+        <span>110%</span>
+        <!-- fa-lg는 아이콘의 크기를 말한다. -->
+        <i class="fas fa-battery-full fa-lg"></i>
+        <i class="fas fa-bolt"></i>
+      </div>
+    </div>
+    <!-- 다른페이지에도 header 동일 -->
+    <header class="screen-header">
+      <h1 class="screen-header__title">More</h1>
+      <div class="screen-header__icons">
+        <span><i class="fas fa-search fa-2x"></i></span>
+        <span><i class="fas fa-music fa-2x"></i></span>
+        <!-- 톱니바퀴를 기준으로 빨간 점이 들어가야하므로
+        톱니바퀴는 position:relative를 적용시켜야 하고,
+      빨간 점은 posigion:absolute를 적용시켜야한다. 
+    여기서 부모요소는 screen-header__icons이다.
+  돋보기가 부모요소가 아닌 이유? 빨간점은 돋보기가 아닌 screen-header__icons인
+div에 묶여있다.-->
+        <span class="nav__notification--dot"></span>
+        <span><i class="fas fa-cog fa-2x"></i></span>
+      </div>
+    </header>
+
+    <!-- main-screen은 수평으로 padding 주기 위해
+    more-screen은 수평으로 margin은 주기 위해 사용 -->
+    <main class="main-screen more-screen">
+      <div class="user-component">
+        <!-- .user-component__column*2 -->
+        <!-- container -->
+        <div class="user-component__column">
+          <!-- 프로질 사진 중간 사이즈와 큰 사이즈. 각각 다른 페이지에 사용할 class name이다. -->
+          <img
+            src="img/profilePhoto.jpg"
+            class="user-component__photo user-component__photo--xl"
+          />
+          <div class="user-component__text">
+            <h4 class="user-component__nickname">Clara</h4>
+            <h6 class="user-component__subtitle">
+              +82 10-987-6543<span class="exclamation">!</span>
+            </h6>
+          </div>
+        </div>
+        <div class="user-component__column">
+          <i class="far fa-comment-alt fa-2x"></i>
+        </div>
+      </div>
+      <!-- icon 4개 -->
+      <div class="icon-row">
+        <div class="icon-row__icon">
+          <i class="far fa-calendar-check"></i>
+          <span>Calendar</span>
+        </div>
+        <div class="icon-row__icon">
+          <i class="far fa-address-book"></i><span>Talk Drive</span>
+        </div>
+        <div class="icon-row__icon">
+          <i class="far fa-kiss-wink-heart"></i><span>Emoticons</span>
+        </div>
+        <div class="icon-row__icon">
+          <i class="fas fa-paint-roller"></i><span>Themes</span>
+        </div>
+      </div>
+      <div class="second-icon-row">
+        <div class="icon-row__icon">
+          <i class="fas fa-file-invoice-dollar"></i>
+          <span>Account</span>
+        </div>
+        <div class="icon-row__icon">
+          <i class="far fa-comments"></i><span>Openchat</span>
+        </div>
+        <!-- 간격 맞추기 위해 코드 작성 후 opacity줘서 투명하게 만듦 -->
+        <div class="icon-row__icon--opacity">
+          <i class="far fa-address-book"></i><span>Talk Drive</span>
+        </div>
+        <div class="icon-row__icon--opacity">
+          <i class="far fa-kiss-wink-heart"></i><span>Emoticons</span>
+        </div>
+      </div>
+      <div class="more-suggestions">
+        <h4 class="more-suggestons__title">Suggestions</h4>
+        <div class="more-suggestions__icons">
+          <div class="more-suggestions__icon">
+            <div class="more-suggestions__icon-image">
+              <i class="fas fa-quote-right"></i>
+            </div>
+            <span class="more-suggestions__icon-text">Kokoa Story</span>
+          </div>
+          <div class="more-suggestions__icon">
+            <div class="more-suggestions__icon-image">
+              <i class="fas fa-users"></i>
+            </div>
+            <span class="more-suggestions__icon-text">Kokoa Friends</span>
+          </div>
+          <div class="more-suggestions__icon">
+            <div class="more-suggestions__icon-image">
+              <i class="fas fa-gamepad"></i>
+            </div>
+            <span class="more-suggestions__icon-text">Friends Gem</span>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- 다른 페이지에도 동일하게 있어 -->
+    <!-- text와 사진으로 이루어져있어 -->
+    <!-- 두개의 column를 갖고 있어. 첫번째 column은 사진과 text 넣는다. -->
+
+    <!-- VSC단축키: nav>ul>li*4>a -->
+    <nav class="nav">
+      <ul class="nav__ul">
+        <li class="nav__li">
+          <!-- 해당 아이콘 클릭하면 friends.html파일로 이동 -->
+          <a class="nav__link" href="friends.html"
+            ><i class="far fa-user fa-2x"></i
+          ></a>
+        </li>
+        <li class="nav__li">
+          <!-- 해당 아이콘 클릭하면 chats.html 파일로 이동 -->
+          <a class="nav__link" href="chats.html">
+            <i class="far fa-comment fa-2x"></i
+          ></a>
+        </li>
+        <li class="nav__li">
+          <a class="nav__link" href="find.html"
+            ><i class="fas fa-search fa-2x"></i
+          ></a>
+        </li>
+        <li class="nav__li">
+          <a class="nav__link" href="more.html">
+            <span class="nav__notification--dot"></span>
+            <span class="nav__more"
+              ><i class="fas fa-ellipsis-h fa-2x"></i></span
+          ></a>
+        </li>
+      </ul>
+    </nav>
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

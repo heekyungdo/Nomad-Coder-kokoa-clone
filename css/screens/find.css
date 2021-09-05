@@ -1,27 +1,3 @@
-.find-icons {
-  /* 아이콘 가로 정렬 */
-  display: flex;
-  /* 아이콘  같은 비율 간격으로 뛰우기 */
-  justify-content: space-between;
-}
-
-.find-icons__icon {
-  display: flex;
-  /* 아이콘과 아이콘 text 세로 정렬 */
-  flex-direction: column;
-  align-items: center;
-}
-
-/* 아이콘 사이즈 조절 */
-.find-icons__icon i {
-  font-size: 35px;
-}
-
-/* 아이콘과 text 사이 간격 조절 */
-.find-icons__icon span {
-  margin-top: 15px;
-}
-
 .recommended-friends {
   /* page 내에 있는 선인데, 이 선은 아이콘 박스 쪽에 속하게 해도되고, 
   아래 박스 쪽에 속하게 해도돼. 내 초이스. 나는 아이콘 박스 쪽에 속하게 한 것 */

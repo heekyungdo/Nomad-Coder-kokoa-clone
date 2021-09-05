@@ -67,7 +67,7 @@
 .user-component__column:last-child {
   color: rgba(0, 0, 0, 0.4);
   /* badge의 위치를 오른쪽으로 이동시키기 위해 flex 사용 */
-  /* 대신 이렇게 사용하면 friends 화면의 2^ 부분이 이상해져
+  /* 대신 이렇게 사용하면 friends 화면의 2> 부분이 이상해져
   그래서 friends.html가서 div로 다시 한번 묶어줘.
   why?? div로 다시 한번 묶어줌으로서 부모의 flex영향 받지 않아*/
   display: flex;

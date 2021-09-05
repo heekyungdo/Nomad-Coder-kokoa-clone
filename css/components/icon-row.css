@@ -1,0 +1,37 @@
+.icon-row {
+  /* 아이콘 가로 정렬 */
+  display: flex;
+  /* 아이콘  같은 비율 간격으로 뛰우기 */
+  justify-content: space-between;
+}
+
+.second-icon-row {
+  /* 아이콘 가로 정렬 */
+  display: flex;
+  /* 아이콘  같은 비율 간격으로 뛰우기 */
+  justify-content: space-between;
+}
+
+/* find screen, more screen의 아이콘 부분은 비슷하니 
+공통으로 적용할 수 있도록 따로 파일 생성 */
+.icon-row__icon {
+  display: flex;
+  /* 아이콘과 아이콘 text 세로 정렬 */
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 아이콘 사이즈 조절 */
+.icon-row__icon i {
+  font-size: 35px;
+}
+
+/* 아이콘과 text 사이 간격 조절 */
+.icon-row__icon span {
+  margin-top: 15px;
+}
+
+/* 필요없는 icons 투명하게 만들기 */
+.icon-row__icon--opacity {
+  opacity: 0;
+}
