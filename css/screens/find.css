@@ -71,6 +71,20 @@
   justify-content: space-between;
   /* across axis 중간 정렬 */
   align-items: center;
+  /* open chat 내부 이미지 가운데 border */
+  border-bottom: var(--inside-border);
+  /* border 사이 간격 */
+  padding-bottom: 15px;
+}
+
+.second-open-post {
+  display: flex;
+  /* 텍스트와 pahud 이미지 가로 정렬 */
+  justify-content: space-between;
+  /* across axis 중간 정렬 */
+  align-items: center;
+  /* border 사이 간격 */
+  padding-top: 15px;
 }
 
 .open-post__title {
