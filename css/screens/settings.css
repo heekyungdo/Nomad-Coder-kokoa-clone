@@ -1,0 +1,22 @@
+.settings__setting {
+  /* 각 list들 사이 공간 */
+  padding: 20px 0px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  /* 텍스트 사이즈 */
+  font-size: 18px;
+  /* align-items을 이용해 중앙정렬 해주기 위해 flex 사용 
+  settings__setting에는 텍스트와 아이콘 포함되어있음
+  이 둘을 중앙정렬해주기!*/
+  display: flex;
+  align-items: center;
+}
+
+/* 아이콘 CSS 설정 */
+.settings__setting i {
+  /* 아이콘 조금 더 투명하게 */
+  opacity: 0.8;
+  /* 아이콘과 텍스트 사이 공간 */
+  margin-right: 20px;
+  /* 아이콘 사이즈 */
+  font-size: 22px;
+}

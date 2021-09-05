@@ -23,7 +23,8 @@
   position: relative;
 }
 
-/* main-screen 내에 들어갈 모든 요소에 padding 효과주기 */
+/* main-screen 내에 들어갈 모든 요소에 padding 효과주기
+모든 screen에는 main-screen 갖고 있음 */
 .main-screen {
   padding: 25px;
 }

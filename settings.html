@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/styles.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Settings - Kokoa Clone</title>
+  </head>
+  <body>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No Service</span>
+        <i class="fas fa-wifi"></i>
+      </div>
+      <!-- To Do: Wifi Icon -->
+      <div class="status-bar__column">
+        <span>18:43</span>
+        <!-- Battery Icon -->
+        <!-- Lightning Icon -->
+      </div>
+
+      <div class="status-bar__column">
+        <span>110%</span>
+        <!-- fa-lg는 아이콘의 크기를 말한다. -->
+        <i class="fas fa-battery-full fa-lg"></i>
+        <i class="fas fa-bolt"></i>
+      </div>
+    </div>
+
+    <!-- settings창과 메세지 보내는 창도 header 동일 -->
+    <!-- header은 세개의 column으로 이루어짐 -->
+    <!-- header.alt-header>div.alt-header__column*3 -->
+    <header class="alt-header">
+      <div class="alt-header__column">
+        <i class="fas fa-angle-left fa-2x"></i>
+      </div>
+      <div class="alt-header__column">
+        <h1 class="alt-header__title">Settings</h1>
+      </div>
+      <div class="alt-header__column">
+        <span> <i class="fas fa-search fa-lg"></i></span>
+      </div>
+    </header>
+
+    <!-- list 형식 -->
+    <main class="main-screen">
+      <ul class="settings-list">
+        <!-- settings는 father, setting은 child -->
+        <!-- class=settings__setting은 아이콘을 포함해 -->
+        <li class="settings__setting">
+          <i class="fas fa-bullhorn"></i>
+          <span>Notices</span>
+        </li>
+        <li class="settings__setting">
+          <i class="fas fa-flask"></i>
+          <span>Kokoa Lab</span>
+        </li>
+        <li class="settings__setting">
+          <i class="fas fa-info-circle"></i>
+          <span>Version</span>
+        </li>
+      </ul>
+    </main>
+
+    <!-- 다른 페이지에도 동일하게 있어 -->
+    <!-- text와 사진으로 이루어져있어 -->
+    <!-- 두개의 column를 갖고 있어. 첫번째 column은 사진과 text 넣는다. -->
+
+    <!-- VSC단축키: nav>ul>li*4>a -->
+    <nav class="nav">
+      <ul class="nav__ul">
+        <li class="nav__li">
+          <!-- 해당 아이콘 클릭하면 friends.html파일로 이동 -->
+          <a class="nav__link" href="friends.html"
+            ><i class="far fa-user fa-2x"></i
+          ></a>
+        </li>
+        <li class="nav__li">
+          <!-- 해당 아이콘 클릭하면 chats.html 파일로 이동 -->
+          <a class="nav__link" href="chats.html">
+            <i class="far fa-comment fa-2x"></i
+          ></a>
+        </li>
+        <li class="nav__li">
+          <a class="nav__link" href="find.html"
+            ><i class="fas fa-search fa-2x"></i
+          ></a>
+        </li>
+        <li class="nav__li">
+          <a class="nav__link" href="more.html">
+            <span class="nav__notification--dot"></span>
+            <span class="nav__more"
+              ><i class="fas fa-ellipsis-h fa-2x"></i></span
+          ></a>
+        </li>
+      </ul>
+    </nav>
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

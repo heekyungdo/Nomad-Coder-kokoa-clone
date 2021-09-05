@@ -1,0 +1,30 @@
+/* settings 창과 메세지 보내는 창의 header는 비슷하니까
+alternative header 파일 따로 만들어줌 */
+
+.alt-header {
+  padding: var(--horizontal-space);
+  margin-bottom: 15px;
+  /* 가로 정렬 */
+  display: flex;
+  /* main axis 기준으로 가운데 정렬 */
+  align-items: center;
+  /* 가운데 정렬 */
+  justify-content: center;
+}
+
+.alt-header__title {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+/* < 부분의 오른쪽 공간 자동으로 설정. 
+<, settings, 돋보기 공간 똑같이해서 정렬하기 위함 */
+.alt-header__column:first-child {
+  margin-right: auto;
+}
+
+/* 돋보기 부분의 왼족 공간 자동으로 설정. 
+<, settings, 돋보기 공간 똑같이해서 정렬하기 위함 */
+.alt-header__column:last-child {
+  margin-left: auto;
+}

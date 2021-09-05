@@ -7,6 +7,7 @@
 @import "components/nav-bar.css";
 /* screen-header 동일하게 여러게 필요하니 파일 따로 만들어줌 */
 @import "components/screen-header.css";
+@import "components/alt-screen-header.css";
 @import "components/user-component.css";
 @import "components/badge.css";
 @import "components/icon-row.css";
@@ -21,6 +22,7 @@
 @import "screens/chats.css";
 @import "screens/find.css";
 @import "screens/more.css";
+@import "screens/settings.css";
 
 /* styles.css 파일에는 font-family와 같이 모든 스크린에 적용될 수 있는 스타일 써 놓는게 좋아(노마드 스타일) */
 /* 또는 background-color */
