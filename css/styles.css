@@ -23,6 +23,7 @@
 @import "screens/find.css";
 @import "screens/more.css";
 @import "screens/settings.css";
+@import "screens/chat.css";
 
 /* styles.css 파일에는 font-family와 같이 모든 스크린에 적용될 수 있는 스타일 써 놓는게 좋아(노마드 스타일) */
 /* 또는 background-color */
@@ -35,5 +36,5 @@ body {
 
   /*  body의 모든 컬러 */
   color: #2d2e38;
-  height: 1000px;
+  height: 900px;
 }

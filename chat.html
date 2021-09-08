@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/styles.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat w/Clara - Kokoa Clone</title>
+  </head>
+  <body>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No Service</span>
+        <i class="fas fa-wifi"></i>
+      </div>
+      <!-- To Do: Wifi Icon -->
+      <div class="status-bar__column">
+        <span>18:43</span>
+        <!-- Battery Icon -->
+        <!-- Lightning Icon -->
+      </div>
+
+      <div class="status-bar__column">
+        <span>110%</span>
+        <!-- fa-lg는 아이콘의 크기를 말한다. -->
+        <i class="fas fa-battery-full fa-lg"></i>
+        <i class="fas fa-bolt"></i>
+      </div>
+    </div>
+
+    <!-- settings창과 메세지 보내는 창도 header 동일 -->
+    <!-- header은 세개의 column으로 이루어짐 -->
+    <!-- header.alt-header>div.alt-header__column*3 -->
+    <header class="alt-header">
+      <div class="alt-header__column">
+        <!-- < 버튼을 누르면 more.html 페이지로 이동 -->
+        <a href="more.html"> <i class="fas fa-angle-left fa-2x"></i></a>
+      </div>
+      <div class="alt-header__column">
+        <h1 class="alt-header__title">Clara do</h1>
+      </div>
+
+      <div class="alt-header__column">
+        <span> <i class="fas fa-search fa-lg"></i></span>
+        <span> <i class="fas fa-bars fa-lg"></i></span>
+      </div>
+    </header>
+
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

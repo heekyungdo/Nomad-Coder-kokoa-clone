@@ -10,7 +10,7 @@
   /* 하지만, 이렇게 사용하면 적용이 안돼.
     왜?? 아래에 있는 display:block 때문이지. */
   /* 그래서 아래 display:block을 지워버리자 */
-  /* display: flex라고 해줘도 span 태그는 block 요소로 바뀐다. */
+  /* display: flex라고 해줘야 span 태그는 block 요소로 바뀐다. */
   display: flex;
   justify-content: center;
   align-items: center;
