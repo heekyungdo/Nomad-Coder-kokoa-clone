@@ -12,6 +12,10 @@ alternative header 파일 따로 만들어줌 */
   justify-content: center;
 }
 
+.alt-header__column {
+  width: 33%;
+}
+
 .alt-header__title {
   font-size: 28px;
   font-weight: 600;
@@ -23,8 +27,18 @@ alternative header 파일 따로 만들어줌 */
   margin-right: auto;
 }
 
+.alt-header__column:nth-child(2) {
+  text-align: center;
+}
+
 /* 돋보기 부분의 왼족 공간 자동으로 설정. 
 <, settings, 돋보기 공간 똑같이해서 정렬하기 위함 */
 .alt-header__column:last-child {
   margin-left: auto;
+  display: flex;
+  justify-content: flex-end;
+}
+/* 채팅창 돋보기와 햄버거 아이콘 사이 간격 */
+.alt-header__column span:last-child {
+  margin-left: 20px;
 }
